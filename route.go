@@ -46,8 +46,21 @@ type Route struct {
 	NewDst     Destination
 	Encap      Encap
 	MTU        int
+	Window     int
+	Rtt        int
+	RttVar     int
+	Ssthresh   int
+	Cwnd       int
 	AdvMSS     int
+	Reordering int
 	Hoplimit   int
+	InitCwnd   int
+	Features   int
+	RtoMin     int
+	InitRwnd   int
+	QuickACK   int
+	Congctl    string
+	FastOpenNoCookie int
 }
 
 func (r Route) String() string {
